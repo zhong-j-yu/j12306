@@ -51,7 +51,8 @@ To handle concurrent interactions between reservation processor and other parts 
 we use LMAX Disruptor (https://lmax-exchange.github.io/disruptor/),
 which is designed exactly for this type of application.
 
-See `TestLmax` for the demo. There is one event publisher, which queues reservation requests.
+See class [`TestLmax`](https://github.com/zhong-j-yu/j12306/blob/master/src/j12306/TestLmax.java#L21).
+There is one event publisher, which queues reservation requests.
 All requests are processed sequentially by consumer `C1`, which only invokes `TrainTicketMap`.
 `C1` is really fast.
 We also throw in C2 and C3 which depend on C1; they are no-op now, but they can be used for
