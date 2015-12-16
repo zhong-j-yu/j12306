@@ -1,0 +1,4 @@
+Any work that's based on or derived from https://github.com/weiqj/pc12306
+follows the license requirement set by the original author.
+
+All other works that I created independently are released to public domain.
