@@ -50,6 +50,7 @@ the solution is very stable and quantifiable.
 To handle concurrent interactions between reservation processor and other parts of the system,
 we use LMAX Disruptor (https://lmax-exchange.github.io/disruptor/),
 which is designed exactly for this type of application.
+See my explanation on LMAX: https://stackoverflow.com/a/6715618/2158288
 
 See class [`TestLmax`](https://github.com/zhong-j-yu/j12306/blob/master/src/j12306/TestLmax.java#L21).
 There is one event publisher, which queues reservation requests.
